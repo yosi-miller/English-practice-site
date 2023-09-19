@@ -1,0 +1,54 @@
+
+/* Reset some default browser styles */
+body, h1, h2, div, p, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make a background color for the entire document */
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the container div */
+  div {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Style the titles */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the questions */
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the answer paragraph */
+  p {
+    margin-top: 10px;
+    font-size: 1em;
+  }
+  
+  /* Style the buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

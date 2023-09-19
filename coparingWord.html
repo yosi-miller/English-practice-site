@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Word</title>
+    <style>
+        div.continer{
+            border: 3px solid  ;
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        <p class="text"></p>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="select">
+    </div>
+
+    <script>
+        // const words = ["dad ", 'come' ,"to", "home", "evry", "day", "at", "17:00"]
+        // const words1 = ["dad come to home evry day at 17:00"]
+        const storyArray = ["Milo", "the", "orange", "tabby", "cat", "discovered", "a", "mysterious", "box", "Curiosity", "piqued", "he", "leapt", "inside", "To", "his", "surprise", "the", "box", "was", "magical", "It", "transported", "him", "to", "a", "lush", "garden", "Here", "he", "found", "endless", "catnip", "and", "joy"];
+
+        const text = document.querySelector(".text")
+        const inp = document.querySelector("input")
+        
+        let index = 0
+        function createWords (){
+            let view = ""
+            for (let i = 0; i < 10; i++){
+                let id = 0
+                view += `<span id="${id}">${storyArray[index]} <span>`
+                id++
+                index++
+            }
+            text.innerHTML = view
+        }
+        createWords()
+        inp.addEventListener("keyup", (event) => {
+            if (event.code === "Space"){
+                if (inp.value === text.innerHTML){
+                    text.innerHTML = "ok"
+                }
+                console.log(inp.value);
+                console.log(text.innerHTML);
+                inp.value = '';}
+        })
+    </script>
+    
+</body>
+</html
